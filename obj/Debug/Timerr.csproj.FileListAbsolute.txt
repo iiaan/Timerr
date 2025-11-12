@@ -1,0 +1,16 @@
+C:\Users\Ian\Desktop\Timerr\bin\Debug\Timerr.exe.config
+C:\Users\Ian\Desktop\Timerr\bin\Debug\Timerr.exe
+C:\Users\Ian\Desktop\Timerr\bin\Debug\Timerr.pdb
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr.csproj.AssemblyReference.cache
+C:\Users\Ian\Desktop\Timerr\obj\Debug\MainWindow.g.cs
+C:\Users\Ian\Desktop\Timerr\obj\Debug\App.g.cs
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr_MarkupCompile.cache
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr_MarkupCompile.lref
+C:\Users\Ian\Desktop\Timerr\obj\Debug\MainWindow.baml
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr.g.resources
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr.Properties.Resources.resources
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr.csproj.GenerateResource.cache
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr.csproj.CoreCompileInputs.cache
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr.exe
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr.pdb
+C:\Users\Ian\Desktop\Timerr\obj\Debug\Timerr.exe.config

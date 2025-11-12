@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Timerr"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Closing="Window_Closing">
     <Grid>
-        
+        <TextBlock Name="TimeDisplay" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">00:00:00</TextBlock>
+        <Button Name="btnMyButton" Content="Time Focus" FontSize="30" Click="btnMyButton_Click" Margin="268,341,268,10"/>
     </Grid>
 </Window>
