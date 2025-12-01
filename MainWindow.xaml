@@ -5,10 +5,331 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Timerr"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        Closing="Window_Closing">
+        Title="Timerr - Prioritize your time" 
+        Height="704" 
+        Width="800"
+        Closing="Window_Closing"
+        WindowStartupLocation="CenterScreen"
+        Background="#1E1E2E"
+        ResizeMode="CanMinimize">
+
+    <Window.Resources>
+        <!-- Estilo para el botón principal -->
+        <Style x:Key="ModernButton" TargetType="Button">
+            <Setter Property="Background" Value="#6C63FF"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Padding" Value="30,15"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="25"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#5A52E0"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#4B42C7"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Estilo para botones secundarios -->
+        <Style x:Key="SecondaryButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#A0A0B0"/>
+            <Setter Property="BorderBrush" Value="#3E3E5E"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="15"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="#6C63FF"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!-- Estilo para CheckBox de redes sociales -->
+        <Style x:Key="SocialCheckBox" TargetType="CheckBox">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Medium"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="0,0,15,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="CheckBox">
+                        <Border Background="#2A2A40"
+                                BorderBrush="#3E3E5E"
+                                BorderThickness="2"
+                                CornerRadius="12"
+                                Padding="15,10"
+                                x:Name="Border">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Width="20" Height="20" 
+                                       Background="Transparent"
+                                       BorderBrush="#6C63FF"
+                                       BorderThickness="2"
+                                       CornerRadius="6"
+                                       Margin="0,0,10,0"
+                                       x:Name="CheckMark">
+                                    <TextBlock Text="✓" 
+                                             FontSize="14" 
+                                             FontWeight="Bold"
+                                             Foreground="#6C63FF"
+                                             HorizontalAlignment="Center"
+                                             VerticalAlignment="Center"
+                                             Visibility="Collapsed"
+                                             x:Name="CheckIcon"/>
+                                </Border>
+                                <ContentPresenter VerticalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="CheckIcon" Property="Visibility" Value="Visible"/>
+                                <Setter TargetName="CheckMark" Property="Background" Value="#6C63FF"/>
+                                <Setter TargetName="CheckIcon" Property="Foreground" Value="White"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#6C63FF"/>
+                                <Setter TargetName="Border" Property="Background" Value="#2E2E4E"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#6C63FF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Animación de parpadeo para el texto del timer -->
+        <Storyboard x:Key="PulseAnimation" RepeatBehavior="Forever">
+            <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                           From="1.0" To="0.6" Duration="0:0:1"
+                           AutoReverse="True"/>
+        </Storyboard>
+    </Window.Resources>
+
     <Grid>
-        <TextBlock Name="TimeDisplay" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">00:00:00</TextBlock>
-        <Button Name="btnMyButton" Content="Time Focus" FontSize="30" Click="btnMyButton_Click" Margin="268,341,268,10"/>
+        <!-- Fondo con gradiente sutil -->
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#1E1E2E" Offset="0"/>
+                <GradientStop Color="#2A2A40" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <!-- Contenido principal -->
+        <Grid Margin="50,30,50,30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Encabezado -->
+            <StackPanel Grid.Row="0" Margin="0,0,0,25">
+                <TextBlock Text="⏱️ Timerr" 
+                          FontSize="32" 
+                          FontWeight="Bold" 
+                          Foreground="White"
+                          HorizontalAlignment="Center"/>
+                <TextBlock Text="Stay focused, block distractions" 
+                          FontSize="14" 
+                          Foreground="#A0A0B0"
+                          HorizontalAlignment="Center"
+                          Margin="0,5,0,0"/>
+            </StackPanel>
+
+            <!-- Display del tiempo -->
+            <Border Grid.Row="1" 
+                    Background="#2A2A40"
+                    CornerRadius="30"
+                    Padding="40,30"
+                    Margin="0,0,0,25">
+                <Border.Effect>
+                    <DropShadowEffect Color="#6C63FF" 
+                                    BlurRadius="30" 
+                                    Opacity="0.3"
+                                    ShadowDepth="0"/>
+                </Border.Effect>
+
+                <StackPanel VerticalAlignment="Center">
+                    <!-- Tiempo principal -->
+                    <TextBlock x:Name="TimeDisplay" 
+                              Text="00:00:00"
+                              FontSize="72" 
+                              FontWeight="Bold"
+                              Foreground="White"
+                              TextAlignment="Center">
+                        <TextBlock.Effect>
+                            <DropShadowEffect Color="#6C63FF" 
+                                            BlurRadius="20" 
+                                            Opacity="0.5"
+                                            ShadowDepth="0"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
+
+                    <!-- Mensaje de estado -->
+                    <TextBlock x:Name="StatusMessage"
+                              Text="Ready to focus"
+                              FontSize="16"
+                              Foreground="#A0A0B0"
+                              HorizontalAlignment="Center"
+                              Margin="0,10,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Sección de bloqueo de redes sociales -->
+            <Border Grid.Row="2"
+                    Background="#2A2A40"
+                    CornerRadius="20"
+                    Padding="30,20"
+                    Margin="0,0,0,25">
+                <StackPanel>
+                    <!-- Título de la sección -->
+                    <StackPanel Orientation="Horizontal" 
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,20">
+                        <TextBlock Text="🚫" 
+                                  FontSize="20" 
+                                  Margin="0,0,8,0"/>
+                        <TextBlock Text="Block Distractions" 
+                                  FontSize="18" 
+                                  FontWeight="SemiBold"
+                                  Foreground="White"/>
+                    </StackPanel>
+
+                    <!-- Grid de redes sociales -->
+                    <WrapPanel HorizontalAlignment="Center" 
+                              Orientation="Horizontal">
+                        <CheckBox x:Name="chkTwitter" 
+                                 Content="🐦 Twitter" 
+                                 Style="{StaticResource SocialCheckBox}"
+                                 IsChecked="True"
+                                 Margin="5"/>
+
+                        <CheckBox x:Name="chkInstagram" 
+                                 Content="📷 Instagram" 
+                                 Style="{StaticResource SocialCheckBox}"
+                                 IsChecked="True"
+                                 Margin="5"/>
+
+                        <CheckBox x:Name="chkFacebook" 
+                                 Content="👥 Facebook" 
+                                 Style="{StaticResource SocialCheckBox}"
+                                 Margin="5"/>
+
+                        <CheckBox x:Name="chkYouTube" 
+                                 Content="▶️ YouTube" 
+                                 Style="{StaticResource SocialCheckBox}"
+                                 Margin="5"/>
+
+                        <CheckBox x:Name="chkTikTok" 
+                                 Content="🎵 TikTok" 
+                                 Style="{StaticResource SocialCheckBox}"
+                                 IsChecked="True"
+                                 Margin="5"/>
+
+                        <CheckBox x:Name="chkReddit" 
+                                 Content="🤖 Reddit" 
+                                 Style="{StaticResource SocialCheckBox}"
+                                 Margin="5"/>
+                    </WrapPanel>
+
+                    <!-- Texto informativo -->
+                    <TextBlock Text="Selected sites will be blocked during focus sessions"
+                              FontSize="12"
+                              Foreground="#A0A0B0"
+                              HorizontalAlignment="Center"
+                              Margin="0,15,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <!-- Botón principal -->
+            <Button Name="btnMyButton" 
+                    Grid.Row="2"
+                    Content="🚀 Start Focus Session" 
+                    Style="{StaticResource ModernButton}"
+                    Click="btnMyButton_Click"
+                    HorizontalAlignment="Center"
+                    Margin="0,236,0,40" Grid.RowSpan="2">
+                <Button.Effect>
+                    <DropShadowEffect Color="#6C63FF" 
+                                    BlurRadius="20" 
+                                    Opacity="0.6"
+                                    ShadowDepth="0"/>
+                </Button.Effect>
+            </Button>
+
+            <Button Name="btnStop"
+        Grid.Row="3"
+        Content="⏹️ Stop Session"
+        Style="{StaticResource SecondaryButton}"
+        Click="btnStop_Click"
+        HorizontalAlignment="Center"
+        Margin="0,2,0,56"
+        Visibility="Collapsed"/>
+
+            <!-- Botones secundarios -->
+            <StackPanel Grid.Row="4" 
+                       Orientation="Horizontal" 
+                       HorizontalAlignment="Center">
+                <Button Content="⚙️ Settings" 
+                       Style="{StaticResource SecondaryButton}"
+                       Margin="0,0,10,0"/>
+                <Button Content="📊 Statistics" 
+                       Style="{StaticResource SecondaryButton}"
+                       Margin="10,0,0,0"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Indicador de estado en la esquina -->
+        <Border x:Name="StateIndicator"
+        VerticalAlignment="Top"
+        HorizontalAlignment="Right"
+        Background="#F1C40F"
+        CornerRadius="10"
+        Padding="12,6"
+        Margin="20">
+            <StackPanel Orientation="Horizontal">
+                <Ellipse x:Name="StateDot" Width="8" Height="8" Fill="White" Margin="0,0,6,0"/>
+                <TextBlock x:Name="StateText"
+                  Text="Waiting" 
+                  FontSize="12" 
+                  Foreground="White"
+                  FontWeight="SemiBold"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </Window>

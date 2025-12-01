@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Timerr.Models;
 namespace Timerr.Services
@@ -18,30 +20,58 @@ namespace Timerr.Services
         {
             if (File.Exists(pathBak))
             {
-                File.Copy(pathBak, path, true);
+
                 File.Delete(pathBak);
             }
+
+        }
+
+        public void RemoveIps()
+        {
+
+            var lines = File.ReadAllLines(path).ToList();
+
+            var socialHosts = new List<string>
+    {
+        "x.com",
+        "instagram.com",
+        "www.instagram.com",
+
+        "facebook.com",
+        "www.facebook.com",
+
+        "youtube.com",
+        "www.youtube.com",
+
+        "tiktok.com",
+        "www.tiktok.com",
+
+        "reddit.com",
+        "www.reddit.com"
+    };
+            lines.RemoveAll(line =>
+        socialHosts.Any(h => line.Contains(h))
+    );
+
+            File.WriteAllLines(path, lines);
         }
         public void AddSocialMedia(Socialmedia sm)
         {
-            string entry = $"{sm.ip} {sm.hostname}";
+            string entry = $"{sm.ip} {sm.hostname}".Trim();
+            var lines = File.ReadAllLines(path)
+                            .Select(l => l.Trim())
+                            .ToList();
 
-            var lines = File.ReadAllLines(path);
-
-
+            // Comparación exacta, no contains
             bool exists = lines.Any(line =>
-                line.Contains(sm.hostname) ||
-                line.Contains($"{sm.ip} "));
+                line.Equals(entry, StringComparison.OrdinalIgnoreCase)
+            );
+
             if (exists)
-            {
                 return;
-            }
+
             using (StreamWriter sw = new StreamWriter(path, true))
-            {
                 sw.WriteLine(entry);
-
-            }
-
 
         }
 

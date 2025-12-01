@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Ian\\Desktop\\Timerr\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|c:\\users\\ian\\desktop\\timerr\\services\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:services\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|c:\\users\\ian\\desktop\\timerr\\services\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:services\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\services\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:services\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +26,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 16,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Timer.cs",
-              "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Timer.cs",
-              "RelativeDocumentMoniker": "Services\\Timer.cs",
-              "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Timer.cs",
-              "RelativeToolTip": "Services\\Timer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Task.cs",
+              "RelativeDocumentMoniker": "Services\\Task.cs",
+              "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Task.cs",
+              "RelativeToolTip": "Services\\Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T17:13:28.258Z",
+              "WhenOpened": "2025-11-10T15:28:57.768Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -48,7 +48,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Timer.cs",
+              "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Timer.cs",
+              "RelativeDocumentMoniker": "Services\\Timer.cs",
+              "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Timer.cs",
+              "RelativeToolTip": "Services\\Timer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:39:09.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -60,28 +73,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAwwB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T17:32:00.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Task.cs",
-              "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Task.cs",
-              "RelativeDocumentMoniker": "Services\\Task.cs",
-              "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Task.cs",
-              "RelativeToolTip": "Services\\Task.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T15:28:57.768Z",
               "EditorCaption": ""
             }
           ]
