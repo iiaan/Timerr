@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Ian\\Desktop\\Timerr\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|c:\\users\\ian\\desktop\\timerr\\services\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|c:\\users\\ian\\desktop\\timerr\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\services\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:services\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\services\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:services\\timer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|c:\\users\\ian\\desktop\\timerr\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|C:\\Users\\Ian\\Desktop\\Timerr\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5C27D960-50C9-44E7-9600-E57FD73FD91F}|Timerr.csproj|solutionrelative:app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 16,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
@@ -36,15 +44,11 @@
               "RelativeDocumentMoniker": "Services\\Task.cs",
               "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\Services\\Task.cs",
               "RelativeToolTip": "Services\\Task.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAIAwwKgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T15:28:57.768Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
             },
             {
               "$type": "Document",
@@ -57,11 +61,16 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T21:39:09.118Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -73,16 +82,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAA4wFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOEBAAAAAAAAAAAjwPMBAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T17:32:00.914Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-01T15:51:46.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\Ian\\Desktop\\Timerr\\app.manifest",
+              "RelativeDocumentMoniker": "app.manifest",
+              "ToolTip": "C:\\Users\\Ian\\Desktop\\Timerr\\app.manifest",
+              "RelativeToolTip": "app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2025-12-01T01:53:59.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             }
           ]
         }

@@ -13,7 +13,7 @@ using System.Windows;
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Timerr")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("IanJowe")]
 [assembly: AssemblyCulture("")]
 
 // Si establece ComVisible en false, los tipos de este ensamblado no estarán visibles 
@@ -48,5 +48,5 @@ using System.Windows;
 //      Número de compilación
 //      Revisión
 //
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.0.1")]
+[assembly: AssemblyFileVersion("1.0.0.1")]
