@@ -19,7 +19,14 @@ Timerr es una aplicación simple para **bloquear el acceso a la red durante un t
 
 ## Instalación / Compilación
 
-- Requisitos: Windows, .NET >(4.7.2).  
-- Clona el repositorio:  
-  ```bash
+- Requisitos: Windows, .NET >(4.7.2).
+
+### Opción 1 — Descargar el ejecutable (Recomendable)
+
+-Descarga el .rar con la versión compilada: https://drive.google.com/file/d/1WDUYhSPYDGqKSOGiCZag2k9nd8BmgtOG/view
+
+### Opción 2 — Compilar desde código fuente
+```bash
   git clone https://github.com/iiaan/Timerr.git
+```
+Abre la solución en Visual Studio y compila.
